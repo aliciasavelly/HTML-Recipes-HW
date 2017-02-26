@@ -21,13 +21,9 @@
 
 <body>
   <header>
-    <figure>
-      <img src="https://p5.zdassets.com/hc/settings_assets/949671/200252358/ytySguzPxy92CMwTwD4fxg-logo-emblem-red.png" style="width:50px" alt="App Academy Logo">
-    </figure>
+    <img src="https://p5.zdassets.com/hc/settings_assets/949671/200252358/ytySguzPxy92CMwTwD4fxg-logo-emblem-red.png" style="width:50px" alt="App Academy Logo">
 
     <nav>
-      <h1>Mutter Paneer</h1>
-
       <ul>
         <li><a href="#description">Description</a></li>
         <li><a href="#ingredients">Ingredients</a></li>
@@ -37,24 +33,8 @@
   </header>
 
   <aside>
-    <h2 id=description>Description</h2>
-
-    <p>
-      Below is the recipe for a <a href="https://en.wikipedia.org/wiki/Mattar_paneer">delicious Indian dish</a> that anyone will enjoy! The fresher the ingredients, the better!
-    </p>
-  </aside>
-
-  <section>
-    <figure>
-      <img src="https://2.bp.blogspot.com/--WJDvKCX3Ww/UwIhUFtKGeI/AAAAAAAARWQ/aHyw3M2mOfE/s1600/Mutter+paneer_Final2.JPG" style="width:300px" alt="Mutter Paneer Photo">
-
-      <figcaption>
-        <a href="http://sf.eater.com/maps/best-indian-restaurants-san-francisco-berkeley-oakland">Where to Feast on Indian Food in SF</a>
-      </figcaption>
-    </figure>
-
     <h2 id=ingredients>Ingredients</h2>
-      <ul>
+      <ul class="ingredients-list">
         <li>Jeera seeds</li>
         <li>Jeera powder</li>
         <li>Dhania</li>
@@ -68,11 +48,27 @@
         <li>Garlic</li>
         <li>Cream</li>
       </ul>
-  </section>
+  </aside>
 
   <section>
+    <h1>Mutter Paneer</h1>
+
+    <figure>
+      <img src="https://2.bp.blogspot.com/--WJDvKCX3Ww/UwIhUFtKGeI/AAAAAAAARWQ/aHyw3M2mOfE/s1600/Mutter+paneer_Final2.JPG" style="width:300px" alt="Mutter Paneer Photo">
+
+      <figcaption>
+        <a href="http://sf.eater.com/maps/best-indian-restaurants-san-francisco-berkeley-oakland">Where to Feast on Indian Food in SF</a>
+      </figcaption>
+    </figure>
+
+    <h2 id=description>Description</h2>
+
+    <p>
+      Below is the recipe for a <a href="https://en.wikipedia.org/wiki/Mattar_paneer">delicious Indian dish</a> that anyone will enjoy! The fresher the ingredients, the better!
+    </p>
+
     <h2 id=directions>Directions</h2>
-      <ol>
+      <ol class="directions-list">
         <li>Cook jeera seeds with a little bit of oil until they pop.</li>
         <li>Saute onions with jeera seeds and garlic. Puree onions and garlic for a smooth texture.</li>
         <li>To a larger pot, add chopped tomatoes and paneer.</li>
@@ -82,7 +78,6 @@
         <li>Cut up paneer and add once peas and tomatoes are cooked through.</li>
         <li>Add cream.</li>
       </ol>
-  </section>
 
   <section id="reviews">
     <h2>Reviews</h2>
@@ -90,14 +85,14 @@
       <label for="name">Name</label>
       <input id="name" type="text" name="name">
 
-      <label for="rating">Rating</label>
-      <input type="radio" name="rating" value="1" checked>
-      <input type="radio" name="rating" value="2">
-      <input type="radio" name="rating" value="3">
-      <input type="radio" name="rating" value="4">
-      <input type="radio" name="rating" value="5">
+      <label for="rating"></label>
+      1<input type="radio" name="rating" value="1" checked>
+      2<input type="radio" name="rating" value="2">
+      3<input type="radio" name="rating" value="3">
+      4<input type="radio" name="rating" value="4">
+      5<input type="radio" name="rating" value="5">
 
-      <label for="expertise">Cooking Expertise</label>
+      <label for="expertise"></label>
 
       <select name="expertise">
         <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Expertise</option>
@@ -107,13 +102,14 @@
         <option value="Professional Chef">Professional Chef</option>
       </select>
 
-      <label>Review
+      <label>
         <textarea id="review" name="review" rows="5" cols="30"></textarea>
       </label>
 
       <input type="submit" value="Submit Review">
 
     </form>
+  </section>
   </section>
 
 
