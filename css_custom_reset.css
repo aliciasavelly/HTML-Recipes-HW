@@ -1,6 +1,5 @@
 html, head, body, title, header, figure,
-nav, h1, ul, li, a, aside, h2, p, section,
-img, figcaption, ol, form, label, input,
+nav, h1, ul, li, a, aside, h2, p, section, figcaption, ol, form, label, input,
 select, option, textarea, footer {
   margin: 0;
   border: 0;
@@ -17,7 +16,7 @@ input:last-child:hover {
 
 input[type="radio"], input[type="submit"], select {
   cursor: pointer;
-  /*outline: none;*/
+  outline: none;
 }
 
 input[type="radio"] {
@@ -36,12 +35,16 @@ ol li:nth-of-type(2n) {
   background-color: whitesmoke;
 }
 
+ol {
+  padding-left: 15px;
+}
+
 h2 + .review-form {
   border-top: 1px solid black;
 }
 
 nav {
-  display: inline-block;
+  display: flex;
 }
 
 nav ul li {
@@ -51,23 +54,50 @@ nav ul li {
 
 header img {
   padding: 10px;
+  float: left;
+  clear: both;
 }
 
 body {
   width: 900px;
   margin: 0 auto;
+  background: #ffe6e2;
 }
 
-section {
-  width: 700px;
-  display: inline-block;
-  vertical-align: top;
+div {
+  display: block;
 }
 
-aside {
-  width: 180px;
-  margin-right: 15px;
-  display: inline-block;
+figure img {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.col {
+  float: left;
+  box-sizing: border-box;
+}
+
+[class*='col-'] {
+  padding-right: 20px;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+
+.col-2-3 {
+  width: 66.66%;
+}
+
+.mph:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .ingredients-list li {
@@ -100,16 +130,5 @@ input[type="submit"] {
 }
 
 h2 {
-  margin: 10px;
+  margin: 10px 0px;
 }
-
-/*input[type="submit"]:focus {
-    border-color:#333;
-}*/
-
-
-
-/*nav ul li a {
-  padding: 20px;
-  display: block;
-}*/

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="mph">
     <img src="https://p5.zdassets.com/hc/settings_assets/949671/200252358/ytySguzPxy92CMwTwD4fxg-logo-emblem-red.png" style="width:50px" alt="App Academy Logo">
 
     <nav>
@@ -32,8 +32,10 @@
     </nav>
   </header>
 
-  <aside>
-    <h2 id=ingredients>Ingredients</h2>
+  <div class="col col-1-3">
+    <aside>
+
+      <h2 id=ingredients>Ingredients</h2>
       <ul class="ingredients-list">
         <li>Jeera seeds</li>
         <li>Jeera powder</li>
@@ -48,69 +50,72 @@
         <li>Garlic</li>
         <li>Cream</li>
       </ul>
-  </aside>
+    </aside>
+  </div>
 
-  <section>
-    <h1>Mutter Paneer</h1>
+  <div class="col col-2-3">
+    <section>
+      <h1>Mutter Paneer</h1>
 
-    <figure>
-      <img src="https://2.bp.blogspot.com/--WJDvKCX3Ww/UwIhUFtKGeI/AAAAAAAARWQ/aHyw3M2mOfE/s1600/Mutter+paneer_Final2.JPG" style="width:300px" alt="Mutter Paneer Photo">
+      <figure>
+        <img src="https://2.bp.blogspot.com/--WJDvKCX3Ww/UwIhUFtKGeI/AAAAAAAARWQ/aHyw3M2mOfE/s1600/Mutter+paneer_Final2.JPG" alt="Mutter Paneer Photo">
 
-      <figcaption>
-        <a href="http://sf.eater.com/maps/best-indian-restaurants-san-francisco-berkeley-oakland">Where to Feast on Indian Food in SF</a>
-      </figcaption>
-    </figure>
+        <figcaption>
+          <a href="http://sf.eater.com/maps/best-indian-restaurants-san-francisco-berkeley-oakland">Where to Feast on Indian Food in SF</a>
+        </figcaption>
+      </figure>
 
-    <h2 id=description>Description</h2>
+      <h2 id=description>Description</h2>
 
-    <p>
-      Below is the recipe for a <a href="https://en.wikipedia.org/wiki/Mattar_paneer">delicious Indian dish</a> that anyone will enjoy! The fresher the ingredients, the better!
-    </p>
+      <p>
+        Below is the recipe for a <a href="https://en.wikipedia.org/wiki/Mattar_paneer">delicious Indian dish</a> that anyone will enjoy! The fresher the ingredients, the better!
+      </p>
 
-    <h2 id=directions>Directions</h2>
-      <ol class="directions-list">
-        <li>Cook jeera seeds with a little bit of oil until they pop.</li>
-        <li>Saute onions with jeera seeds and garlic. Puree onions and garlic for a smooth texture.</li>
-        <li>To a larger pot, add chopped tomatoes and paneer.</li>
-        <li>Add in spices, as well as the onion mixture.</li>
-        <li>Add a dash of salt.</li>
-        <li>Season to taste.</li>
-        <li>Cut up paneer and add once peas and tomatoes are cooked through.</li>
-        <li>Add cream.</li>
-      </ol>
+      <h2 id=directions>Directions</h2>
+        <ol class="directions-list">
+          <li>Cook jeera seeds with a little bit of oil until they pop.</li>
+          <li>Saute onions with jeera seeds and garlic. Puree onions and garlic for a smooth texture.</li>
+          <li>To a larger pot, add chopped tomatoes and paneer.</li>
+          <li>Add in spices, as well as the onion mixture.</li>
+          <li>Add a dash of salt.</li>
+          <li>Season to taste.</li>
+          <li>Cut up paneer and add once peas and tomatoes are cooked through.</li>
+          <li>Add cream.</li>
+        </ol>
 
-  <section id="reviews">
-    <h2>Reviews</h2>
-    <form id="review-form" action="/reviews" method="post">
-      <label for="name">Name</label>
-      <input id="name" type="text" name="name">
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <form id="review-form" action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
 
-      <label for="rating"></label>
-      1<input type="radio" name="rating" value="1" checked>
-      2<input type="radio" name="rating" value="2">
-      3<input type="radio" name="rating" value="3">
-      4<input type="radio" name="rating" value="4">
-      5<input type="radio" name="rating" value="5">
+        <label for="rating"></label>
+        1<input type="radio" name="rating" value="1" checked>
+        2<input type="radio" name="rating" value="2">
+        3<input type="radio" name="rating" value="3">
+        4<input type="radio" name="rating" value="4">
+        5<input type="radio" name="rating" value="5">
 
-      <label for="expertise"></label>
+        <label for="expertise"></label>
 
-      <select name="expertise">
-        <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Expertise</option>
-        <option value="Sometimes Cook">Sometimes Cook</option>
-        <option value="Cook Everyday">Cook Everyday</option>
-        <option value="Cooking is a Hobby">Cooking is a Hobby</option>
-        <option value="Professional Chef">Professional Chef</option>
-      </select>
+        <select name="expertise">
+          <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Expertise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
+        </select>
 
-      <label>
-        <textarea id="review" name="review" rows="5" cols="30"></textarea>
-      </label>
+        <label>
+          <textarea id="review" name="review" rows="5" cols="30"></textarea>
+        </label>
 
-      <input type="submit" value="Submit Review">
+        <input type="submit" value="Submit Review">
 
-    </form>
-  </section>
-  </section>
+      </form>
+    </section>
+    </section>
+  </div>
 
 
   <footer>
