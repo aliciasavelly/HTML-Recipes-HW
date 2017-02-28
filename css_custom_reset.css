@@ -13,18 +13,28 @@ header img {
 }
 
 body {
-  width: 900px;
   margin: 0 auto;
+  width: 800px;
   background: #ffe6e2;
+  padding-bottom: 60px;
+}
+
+aside {
+  display: inline-block;
 }
 
 nav {
-  display: flex;
+  /*display: flex;*/
+  float: right;
 }
 
 nav ul li {
   display: inline-block;
+}
+
+nav ul li a {
   padding: 20px;
+  display: block;
 }
 
 ol {
@@ -101,6 +111,11 @@ input[type="text"], select {
   border: 1px solid black;
 }
 
+select {
+  margin: 10px 0;
+  width: 180px;
+}
+
 input:last-child {
   background: gold;
 }
@@ -145,9 +160,22 @@ h2 {
   display: none;
 }*/
 
-@media all and (max-width: 980px) {
+@media all and (max-width: 900px) {
+  .mph:after {
+    display: inline-block;
+  }
+
+  .col {
+    position: relative;
+    margin: auto;
+  }
+
   nav ul {
     display: none;
+  }
+
+  aside {
+    /*display: block;*/
   }
 
   .hamburger-dropdown {
@@ -155,7 +183,6 @@ h2 {
   }
 
   .hamburger-dropdown > li {
-    float: right;
     background: url(hamburger.png);
     background-repeat: no-repeat;
     background-size: 50px 50px;
