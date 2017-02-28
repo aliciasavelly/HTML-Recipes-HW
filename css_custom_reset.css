@@ -132,3 +132,9 @@ input[type="submit"] {
 h2 {
   margin: 10px 0px;
 }
+
+@media all and (max-width: 980px) {
+  nav ul {
+    display: none;
+  }
+}
